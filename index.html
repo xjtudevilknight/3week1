@@ -8,15 +8,396 @@
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
+    <style>
+        .block_in_middle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+ 
+        #search_main {
+            height: 800px;
+            background-image: url("assets/brooklyn-bridge-371216.jpg")
+        }
+        
+        .login_container { width: 35%; height: 100px; float: right; color: white;}
+        .login_container a { line-height: 100px;  margin-left: 20px; margin-right: 20px; font-size: 18px; }
+        .login_container button { width: 100px; height: 30px; margin-left: 20px; margin-right: 20px; font-size: 12px;  background-color: transparent; border: 1px solid white;  color: white }
+
+        #agent {
+            height: 30px;
+            width: 70px;
+            padding-top: 50px;
+            margin-left: 70%;
+            display: inline-block;
+        }
+
+        #login {
+            padding-top: 40px;
+            margin-left: 50px;
+            display: inline-block;
+        }
+
+        #signup {
+            padding-top: 40px;
+            display: inline-block;
+            margin-left: 35px;
+        }
+
+        .sign_up_border {
+            border: 1px solid white;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 5px;
+        }
+
+        span {
+            color: red;
+            font-size: 24px; 
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            padding-top: 210px;
+        }
+
+        h2 {
+            font-size: 15px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #search_form {
+            height: 50px;
+            width: 580px;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #search_input {
+            width: 450px;
+            height: 50px;
+            opacity: 0.2;
+        }
+        
+        #search_button {
+            height: 56px;
+            width: 120px;
+            background-color: green;
+            margin-left: -4px;
+            border: 0px solid;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            font-size: 20px;
+            color: white;
+        }
+        
+        #works {
+            height: 400px;
+            padding-top: 8px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: grey;
+            padding-left: 5%;
+            padding-right: 5%;
+            width:90%
+        }
+
+        .decorate {
+            width: 50px;
+            height: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: grey;
+        }
+
+        p {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .work_block {
+            padding-top: 50px;
+            width: 33%;
+            height: 250px;
+            background-color: yellow;
+            display: inline-block;
+        }
+        
+        .work_pic {
+            background-color: red;
+            width: 60px;
+            height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .work_para_big {
+           font-size: 18px; 
+        }
+
+        .work_para_little {
+            width: 220px;
+            font-size: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: normal;
+            color: grey;
+        }
+
+        #why_choose {
+            height: 800px;
+            padding-top: 30px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: grey;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .choose_block {
+            display: inline-block;
+            background-color: yellow;
+            width: 50%;
+            height: 200px;
+            margin-left: -1px;
+            margin-right: -1px;
+            padding-top: 30px;
+        }
+
+        .choose_pic {
+            width:30%;
+            height: 30px;
+            padding-top: 10px;
+            background-color: green;
+            display: inline-block;
+        }
+
+        .choose_title {
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+            font_weight: bold;
+            font-size: 30px;
+        }
+
+        .choose_description {
+            padding-left: 30%;
+            font-weight: normal;
+            font-size: 15px;
+            width: 50%;
+            text-align: left;
+        }
+
+        #contact_block {
+            height: 600px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: grey;
+        }
+
+        #contact_buttons {
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            height: 50px;
+            padding-top: 100px;
+        }
+
+        .contact_btn_color {
+            color: white;
+            background-color: green;
+        }
+        .contact_btn_color_toggle {
+            color: green;
+            background-color: white;
+        }
+        .contact_btn {
+            display: inline-block;
+            height: 100%;
+            width: 50%;
+            font-size: 15px;
+            margin-left: -1px;
+            margin-right: -1px;
+        }
+
+        #quote_span {
+            color: red;
+        }
+
+        #contact_slogon {
+            width: 70%;
+            height: 50px;
+            font-weight: normal;
+        }
+
+        #ceo_name {
+            width: 150px;
+            height: 50px;
+            background-color: yellow;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .firstname {
+            color: black;
+            font-size: 20px;
+        }
+        
+        .lastname { color: grey; font-size: 18px; }
+        #manage_people { width: 360px; height: 100px; margin-top: 50px; }
+        .people { display: inline-block; width: 100px; height: 100%; background-image: url("assets/brooklyn-bridge-371216.jpg"); margin-left: 8px; margin-right: 8px; border-radius: 50px; border: 1px solid green;}
+
+        .opacity_deal { opacity: 0.3; }
+        #bottom_search { height: 300px; background-color: yellow; background-image: url("assets/brooklyn-bridge-371216.jpg")}
+        #form_bottom_search { width: 100%; height: 50px; padding-top: 130px; text-align: center;}
+        #form_bottom_search span {  margin-right: 20px; color: white; font-weight: bold; font-size: 25px;}
+        #form_bottom_search input { height: 40px; width: 40%; border-width: 0px; padding: 0px; }
+        #form_bottom_search button { line-height: 40px; width: 100px; background-color: green; color: white; font-size: 20px, vertical-align: center; border-width: 0px;  padding: 0px; margin-left: -2px; }
+        #footer { height: 60px; width: 100%; }
+        .foot_link { display: inline-block; height: 100%; width: 40%; margin-left: 10%; }
+        #footer a {  margin-left: 15px; margin-right: 15px; color: grey; font-size: 15px; line-height: 60px; }
+        .foot_friend_link { float: right; height: 100%;  width: 20%; }
+        .friend_link_container { display: inline-block; width: 30px; height: 30px;  padding-top: 15px; margin-right: 10px; }
+    </style>
 </head>
 <body>
-	
-	<h1>hello, world</h1>
-	<h1>你好，世界</h1>
+    <div id="search_main">
+        <!-- div id="agent"><span>Agents</span></div>        
+        <div id="login"><span>Login</span></div>        
+        <div id="signup"><span class="border1">SignUp</span></div -->
+        <div class="login_container">
+            <a>Agents</a>
+            <a>Login</a>
+            <button id="signup_btn">Sign Up</button>
+        </div>
+        
+        <h1>Relax, Finding An Agent Just Got Easier</h1>
+        <h2>Receive proposals from best agents for free</h2>
+        <form id="search_form">
+            <input id="search_input" type="text" placeholder="Enter a Suburb"></input>
+            <button id="search_button">search</button>
+        </form>
+    </div>
 
-	<section>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, mollitia. Praesentium earum sequi sit eius impedit, id consequatur voluptate labore numquam? Placeat vero inventore cupiditate natus, temporibus, voluptates qui necessitatibus?</p>
-	</section>
+    <div id="works">
+        <div class="decorate"></div>
+        <p>HOW IT WORKS</p>
+        <div class="decorate"></div>
 
+        <div class="work_block">
+            <div class="work_pic"></div>
+            <p class="work_para_big">Compare</p>
+            <p class="work_para_little"> Magni dolores eos qui ratione vo-luptatem sequli nescliunt neque porro quisquam est</p>
+        </div>
+
+
+        <div class="work_block">
+            <div class="work_pic"></div>
+            <p class="work_para_big">Receive Proposals</p>
+            <p class="work_para_little"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+        </div>
+
+
+        <div class="work_block">
+            <div class="work_pic"></div>
+            <p class="work_para_big">Compare</p>
+            <p class="work_para_little"> Magni dolores eos qui ratione vo-luptatem sequli nescliunt neque porro quisquam est</p>
+        </div>
+    </div>
+
+    <div id="why_choose">
+        <p>WHY CHOOSE US</p>
+        <div class="decorate"></div>
+        <div class="choose_block">
+            <div class="choose_pic"></div>
+            <h3 class="choose_title">Quick</h3>
+            <p class="choose_description">Nemo enim ipsam voluptatem quia voluptas sit aspernaur aut odit aut fugit, sed quia consequuntur magni dolores eos</p>
+        </div>
+        <div class="choose_block">
+            <div class="choose_pic"></div>
+            <h3 class="choose_title">Free</h3>
+            <p class="choose_description">Nostrud exercitation uliamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+        </div>
+        <div class="choose_block">
+            <div class="choose_pic"></div>
+            <h3 class="choose_title">Easy</h3>
+            <p class="choose_description">Qui ratione voluptatem sequi nescliunt. Neque porro quisquam est, qui dolorem ipsum</p>
+        </div>
+        <div class="choose_block">
+            <div class="choose_pic"></div>
+            <h3 class="choose_title">Independent</h3>
+            <p class="choose_description">Onsectetur, adipisci velit, sed qula non mumquam eius modi tempora incidunt ut labore et dolore magnam</p>
+        </div>
+        <div class="choose_block">
+            <div class="choose_pic"></div>
+            <h3 class="choose_title">Comprehensive</h3>
+            <p class="choose_description">Cupidatat non proident, sunt in culpa qui offica deserunt mollit anim id est laborum. Sed ut perpiciatis unde</p>
+        </div>
+        <div class="choose_block">
+            <div class="choose_pic"></div>
+            <h3 class="choose_title">Awesome</h3>
+            <p class="choose_description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem-que landantium</p>
+        </div>
+    </div>
+
+    <div id="contact_block">
+        <div id="contact_buttons">
+            <button class="contact_btn contact_btn_color">
+                Testimonials
+            </button>
+            <button class="contact_btn contact_btn_color_toggle">
+                Recent Feedbacks 
+            </button>
+        </div>
+        <div class="block_in_middle" style="text-align: center; margin-top: 30px">
+            <span id="quote_span">"<span>
+        </div>
+
+        <p id="contact_slogon" class="block_in_middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua</p>
+        <div class="decorate"></div>
+        <div id="ceo_name" class="block_in_middle">
+            <span class="firstname">John Meyer</span>
+            <span class="lastname">Halcyon, CEO</span>
+        </div>
+        <div id="manage_people" class="block_in_middle">
+            <div class="people opacity_deal"></div>
+            <div class="people"></div>
+            <div class="people opacity_deal"></div>
+        </div>
+    </div>
+    
+    <div id="bottom_search">
+        <form id="form_bottom_search">
+            <span>Find An Agent</span>
+            <input id="bottom_search_input" type="text" placeholder="Enter a Suburb"></input>
+            <button>SEARCH</button>
+        </form>
+    </div>
+
+    <div id="footer">
+        <div class="foot_link">
+            <a>Blog</a>
+            <a>Contact Us</a>
+            <a>About Us</a>
+            <a>FAQs</a>
+            <a>Privacy</a>
+            <a>Disclaimer</a>
+        </div>
+        
+        <div class="foot_friend_link">
+            <div class="friend_link_container">
+                <img src="assets/brooklyn-bridge-371216.jpg" style="width: 30px; height: 30px;"></img>
+            </div>
+            <div class="friend_link_container">
+                <img src="assets/brooklyn-bridge-371216.jpg" style="width: 30px; height: 30px;"></img>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
