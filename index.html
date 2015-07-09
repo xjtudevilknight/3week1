@@ -8,68 +8,14 @@
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
+    <link href="stylesheets/3week1.css" type="text/css" rel="stylesheet" >
     <style>
-        .block_in_middle {
-            margin-left: auto;
-            margin-right: auto;
-        }
- 
-        #search_main {
-            height: 800px;
-            background-image: url("assets/brooklyn-bridge-371216.jpg")
-        }
-        
-        .login_container { width: 35%; height: 100px; float: right; color: white;}
-        .login_container a { line-height: 100px;  margin-left: 20px; margin-right: 20px; font-size: 18px; }
-        .login_container button { width: 100px; height: 30px; margin-left: 20px; margin-right: 20px; font-size: 12px;  background-color: transparent; border: 1px solid white;  color: white }
-
         span {
             color: red;
             font-size: 24px; 
         }
 
-        h1 {
-            font-size: 30px;
-            text-align: center;
-            padding-top: 300px;
-        }
-
-        h2 {
-            font-size: 15px;
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        #search_form {
-            height: 50px;
-            width: 580px;
-            margin-top: 30px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #search_input {
-            width: 450px;
-            height: 50px;
-            padding: 0px;
-            opacity: 0.2;
-            border-width: 0px;
-            float:left;
-        }
-        
-        #search_button {
-            float:left;
-            height: 50px;
-            width: 120px;
-            padding: 0px;
-            background-color: green;
-            border: 0px solid;
-            border-top-right-radius: 8px;
-            border-bottom-right-radius: 8px;
-            font-size: 20px;
-            color: white;
-        }
-        
+       
         #works {
             height: 400px;
             padding-top: 8px;
@@ -244,20 +190,17 @@
 </head>
 <body>
     <div id="search_main">
-        <!-- div id="agent"><span>Agents</span></div>        
-        <div id="login"><span>Login</span></div>        
-        <div id="signup"><span class="border1">SignUp</span></div -->
-        <div class="login_container">
-            <a>Agents</a>
-            <a>Login</a>
-            <button id="signup_btn">Sign Up</button>
-        </div>
+        <img id="logo" src="assets/logo.jpg"></img>
+        <ul class="login_container">
+            <li><a>Agents</a></li>
+            <li><a>Login</a></li>
+            <li><a>Sign Up</a></li>
+        </ul>
         
         <h1>Relax, Finding An Agent Just Got Easier</h1>
         <h2>Receive proposals from best agents for free</h2>
-        <form id="search_form">
-            <input id="search_input" type="text" placeholder="Enter a Suburb"></input>
-            <button id="search_button">search</button>
+        <form id="search_form" class="block_in_middle">
+            <input id="search_input" type="text" placeholder="Enter a Suburb"></input><button id="search_button">search</button>
         </form>
     </div>
 
