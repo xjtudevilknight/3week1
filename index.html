@@ -10,15 +10,6 @@
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
     <link href="stylesheets/3week1.css" type="text/css" rel="stylesheet" >
     <style>
-        #bottom_search { height: 300px; background-color: yellow; background-image: url("assets/brooklyn-bridge-371216.jpg")}
-        #form_bottom_search { width: 100%; height: 50px; padding-top: 130px; text-align: center;}
-        #form_bottom_search span {  margin-right: 20px; color: white; font-weight: bold; font-size: 25px;}
-        #form_bottom_search input { height: 40px; width: 40%; border-width: 0px; padding: 0px; }
-        #form_bottom_search button { line-height: 40px; width: 100px; background-color: green; color: white; font-size: 20px, vertical-align: center; border-width: 0px;  padding: 0px; margin-left: -2px; }
-        .foot_link { display: inline-block; height: 100%; width: 40%; margin-left: 10%; }
-        .foot_link a {  margin-left: 15px; margin-right: 15px; color: grey; font-size: 15px; line-height: 60px; }
-        .foot_friend_link { float: right; height: 100%;  width: 20%; }
-        .friend_link_container { display: inline-block; width: 30px; height: 30px;  padding-top: 15px; margin-right: 10px; }
     </style>
 </head>
 <body>
@@ -116,39 +107,29 @@
             <li></li>
             <li></li>
         </ul>
-        <!-- div id="manage_people" class="block_in_middle">
-            <div class="people opacity_deal"></div>
-            <div class="people"></div>
-            <div class="people opacity_deal"></div>
-        </div -->
     </div>
     
     <div id="bottom_search">
         <form id="form_bottom_search">
             <span>Find An Agent</span>
-            <input id="bottom_search_input" type="text" placeholder="Enter a Suburb"></input>
-            <button>SEARCH</button>
+            <input id="bottom_search_input" type="text" placeholder="Enter a Suburb"></input><button>SEARCH</button>
         </form>
     </div>
 
     <footer>
-        <div class="foot_link">
-            <a>Blog</a>
-            <a>Contact Us</a>
-            <a>About Us</a>
-            <a>FAQs</a>
-            <a>Privacy</a>
-            <a>Disclaimer</a>
-        </div>
+        <ul class="foot_link">
+            <li><a>Disclaimer</a><li>
+            <li><a>Privacy</a></li>
+            <li><a>FAQs</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a>Blog</a></li>
+        </ul>
         
-        <div class="foot_friend_link">
-            <div class="friend_link_container">
-                <img src="assets/brooklyn-bridge-371216.jpg" style="width: 30px; height: 30px;"></img>
-            </div>
-            <div class="friend_link_container">
-                <img src="assets/brooklyn-bridge-371216.jpg" style="width: 30px; height: 30px;"></img>
-            </div>
-        </div>
+        <ul class= "foot_friend_link">
+            <li><a href="http://www.baidu.com"><span></span></a></li>
+            <li><a href="http://www.baidu.com"><span></span></a></li>
+        </ul>
     </footer>
 </body>
 </html>

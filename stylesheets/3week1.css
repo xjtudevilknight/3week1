@@ -104,4 +104,18 @@ p { margin-top: 30; margin-bottom: 10px; font-size: 20px; font-weight: bold; tex
 #manage_people li:nth-child(3) { background-image: url("../assets/james-stewart-392932_640.jpg"); background-size: cover; }
 
 
+#bottom_search { height: 300px;  background-image: url("../assets/urban-731498.jpg")}
+#form_bottom_search { width: 100%; height: 50px; padding-top: 130px; text-align: center;}
+#form_bottom_search span {  margin-right: 20px; color: white; font-weight: bold; font-size: 25px;}
+#form_bottom_search input { height: 40px; width: 40%; border-width: 0px; padding: 0px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+#form_bottom_search button { line-height: 40px; width: 100px; background-color: green; color: white; font-size: 20px, vertical-align: center; border-width: 0px;  padding: 0px; margin-left: -2px;  border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+
 footer { height: 60px; width: 100%; }
+.foot_link { float:left; height: 100%; width: 40%; margin-left: 10%; }
+.foot_link li { float: right; }
+.foot_link a {  margin-left: 15px; margin-right: 15px; color: grey; font-size: 15px; line-height: 60px; }
+.foot_friend_link {  float: right;  height: 100%;  width: 30%; }
+.foot_friend_link  li { display: inline-block; position:relative; width: 20px; height: 20px; top: 20px;  }
+.foot_friend_link li a span {display: block; width: 20px; height: 20px; }
+.foot_friend_link li:nth-child(1) a span {  background-image: url("../assets/twitter.png"); background-size: cover; }
+.foot_friend_link li:nth-child(2) a span { background-image: url("../assets/facebook.png"); background-size: cover; }
