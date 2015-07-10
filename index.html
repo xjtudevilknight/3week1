@@ -16,16 +16,6 @@
         }
 
        
-        #works {
-            height: 400px;
-            padding-top: 8px;
-            border-bottom-width: 2px;
-            border-bottom-style: solid;
-            border-bottom-color: grey;
-            padding-left: 5%;
-            padding-right: 5%;
-            width:90%
-        }
 
         .decorate {
             width: 50px;
@@ -35,42 +25,6 @@
             background-color: grey;
         }
 
-        p {
-            margin-top: 30px;
-            margin-bottom: 10px;
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-        }
-        
-        .work_block {
-            padding-top: 50px;
-            width: 33%;
-            height: 250px;
-            background-color: yellow;
-            display: inline-block;
-        }
-        
-        .work_pic {
-            background-color: red;
-            width: 60px;
-            height: 60px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .work_para_big {
-           font-size: 18px; 
-        }
-
-        .work_para_little {
-            width: 220px;
-            font-size: 15px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: normal;
-            color: grey;
-        }
 
         #why_choose {
             height: 800px;
@@ -198,36 +152,33 @@
         </ul>
         
         <h1>Relax, Finding An Agent Just Got Easier</h1>
-        <h2>Receive proposals from best agents for free</h2>
+        <p>Receive proposals from best agents for free</p>
         <form id="search_form" class="block_in_middle">
             <input id="search_input" type="text" placeholder="Enter a Suburb"></input><button id="search_button">search</button>
         </form>
     </div>
 
-    <div id="works">
-        <div class="decorate"></div>
-        <p>HOW IT WORKS</p>
-        <div class="decorate"></div>
+    <div id="works" class="common_backgroud_color">
+        <h2>HOW IT WORKS</h2>
 
-        <div class="work_block">
-            <div class="work_pic"></div>
-            <p class="work_para_big">Compare</p>
-            <p class="work_para_little"> Magni dolores eos qui ratione vo-luptatem sequli nescliunt neque porro quisquam est</p>
-        </div>
+        <ul>
+            <li class="work_item">
+                <div class="work_pic block_in_middle"></div>
+                <h3>Compare</h3>
+                <p class="work_para_little"> Magni dolores eos qui ratione vo-luptatem sequli nescliunt neque porro quisquam est</p>
+            </li>
+            <li class="work_item">
+                <div class="work_pic block_in_middle"></div>
+                <h3>Receive Proposals</h3>
+                <p class="work_para_little"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+            </li>
+            <li class="work_item">
+                <div class="work_pic block_in_middle"></div>
+                <h3>Sell with the Best</h3>
+                <p class="work_para_little">Incidunt ut labore et dolore magnam  aliquam quaerat vo-luptatem</p>
+            </li>
+        </ul>
 
-
-        <div class="work_block">
-            <div class="work_pic"></div>
-            <p class="work_para_big">Receive Proposals</p>
-            <p class="work_para_little"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-        </div>
-
-
-        <div class="work_block">
-            <div class="work_pic"></div>
-            <p class="work_para_big">Compare</p>
-            <p class="work_para_little"> Magni dolores eos qui ratione vo-luptatem sequli nescliunt neque porro quisquam est</p>
-        </div>
     </div>
 
     <div id="why_choose">
