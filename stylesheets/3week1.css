@@ -16,6 +16,19 @@
     color:red; padding-left: 20px;
 }
 
+#form_bottom_search input::-webkit-input-placeholder { /* WebKit browsers */
+    color:#606779; padding-left: 20px;
+}
+#form_bottom_search input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#606779; padding-left: 20px;
+}
+#form_bottom_search input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#606779; padding-left: 20px;
+}
+#form_bottom_search input::-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#606779; padding-left: 20px;
+}
+
 /* main_block */
 #search_main {
     position: relative;
@@ -67,3 +80,28 @@ p { margin-top: 30; margin-bottom: 10px; font-size: 20px; font-weight: bold; tex
 #why_choose ul li img { float: right; padding-right: 20px; }
 #why_choose ul li h3 { display:inline-block; vertical-align: top; padding-left: 10px; font-weight: bold; font-size: 30px; }
 #why_choose ul li p { margin-left: 30%; padding-left: 10px; width: 50%; text-align: left; font-weight: normal; font-size: 15px;  margin-top: 30px; margin-bottom: 10px; color: grey; } 
+
+#contact_block { height: 600px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: grey; }
+#contact_block button:hover { background-color: red; }
+#contact_buttons { width: 30%; height: 50px; padding-top: 100px; margin-bottom: 20px; }
+.contact_btn { float:left; height: 100%; width: 50%; font-size: 15px; border: 1px solid #606779;}
+.contact_btn_color { color: white; background-color: #606779;  } 
+.contact_btn_color_toggle { color: #777C89; background-color: white;  } 
+#contact_slogon::before { display: block; width: 24px; height: 24px;  margin-right: auto; margin-left: auto;  margin-bottom: 20px; content:""; background-image: url("../assets/yinhao.png"); background-size: cover; }
+#contact_slogon { width: 70%; height: 50px; font-weight: normal; }
+#contact_slogon::after { display: block; content:"";  width: 30px; height: 3px; background-color: black; opacity: 0.2;  margin-left: auto; margin-right: auto;  margin-top: 8px; }
+
+#ceo_name { margin-top: 70px; font-size: 15px; text-align: center; }
+#ceo_name span { display: block; }
+#ceo_name span:nth-child(1) { font-weight: bold; color: #676D7E }
+#ceo_name span:nth-child(2) { margin-top: 5px; font-weight: normal; color: grey }
+
+#manage_people { width: 360px; height: 100px; margin-top: 50px; }
+#manage_people li { display: inline-block; width: 100px; height: 100%; background-image: url("assets/brooklyn-bridge-371216.jpg"); margin-left: 8px; margin-right: 8px; border-radius: 50px; border: 1px solid green;}
+#manage_people li:hover { opacity: 0.5; }
+#manage_people li:nth-child(1) { background-image: url("../assets/ingrid-bergman-392913_640.jpg"); background-size: cover; }
+#manage_people li:nth-child(2) { background-image: url("../assets/brad-pitt-164880_640.jpg"); background-size: cover; }
+#manage_people li:nth-child(3) { background-image: url("../assets/james-stewart-392932_640.jpg"); background-size: cover; }
+
+
+footer { height: 60px; width: 100%; }

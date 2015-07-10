@@ -10,121 +10,13 @@
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
     <link href="stylesheets/3week1.css" type="text/css" rel="stylesheet" >
     <style>
-        span {
-            color: red;
-            font-size: 24px; 
-        }
-
-        .decorate {
-            width: 50px;
-            height: 5px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: grey;
-        }
-
-        .choose_block {
-            float: left;
-            background-color: yellow;
-            width: 50%;
-            height: 200px;
-            margin-left: -1px;
-            margin-right: -1px;
-            padding-top: 30px;
-        }
-
-        .choose_pic {
-            width:30%;
-            height: 30px;
-            padding-top: 10px;
-            background-color: green;
-            display: inline-block;
-        }
-
-        .choose_title {
-            display: inline-block;
-            vertical-align: top;
-            padding-left: 10px;
-            font_weight: bold;
-            font-size: 30px;
-        }
-
-        .choose_description {
-            padding-left: 30%;
-            font-weight: normal;
-            font-size: 15px;
-            width: 50%;
-            text-align: left;
-        }
-
-        #contact_block {
-            height: 600px;
-            border-bottom-width: 2px;
-            border-bottom-style: solid;
-            border-bottom-color: grey;
-        }
-
-        #contact_buttons {
-            margin-left: auto;
-            margin-right: auto;
-            width: 40%;
-            height: 50px;
-            padding-top: 100px;
-        }
-
-        .contact_btn_color {
-            color: white;
-            background-color: green;
-        }
-        .contact_btn_color_toggle {
-            color: green;
-            background-color: white;
-        }
-        .contact_btn {
-            display: inline-block;
-            height: 100%;
-            width: 50%;
-            font-size: 15px;
-            margin-left: -1px;
-            margin-right: -1px;
-        }
-
-        #quote_span {
-            color: red;
-        }
-
-        #contact_slogon {
-            width: 70%;
-            height: 50px;
-            font-weight: normal;
-        }
-
-        #ceo_name {
-            width: 150px;
-            height: 50px;
-            background-color: yellow;
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .firstname {
-            color: black;
-            font-size: 20px;
-        }
-        
-        .lastname { color: grey; font-size: 18px; }
-        #manage_people { width: 360px; height: 100px; margin-top: 50px; }
-        .people { display: inline-block; width: 100px; height: 100%; background-image: url("assets/brooklyn-bridge-371216.jpg"); margin-left: 8px; margin-right: 8px; border-radius: 50px; border: 1px solid green;}
-
-        .opacity_deal { opacity: 0.3; }
         #bottom_search { height: 300px; background-color: yellow; background-image: url("assets/brooklyn-bridge-371216.jpg")}
         #form_bottom_search { width: 100%; height: 50px; padding-top: 130px; text-align: center;}
         #form_bottom_search span {  margin-right: 20px; color: white; font-weight: bold; font-size: 25px;}
         #form_bottom_search input { height: 40px; width: 40%; border-width: 0px; padding: 0px; }
         #form_bottom_search button { line-height: 40px; width: 100px; background-color: green; color: white; font-size: 20px, vertical-align: center; border-width: 0px;  padding: 0px; margin-left: -2px; }
-        #footer { height: 60px; width: 100%; }
         .foot_link { display: inline-block; height: 100%; width: 40%; margin-left: 10%; }
-        #footer a {  margin-left: 15px; margin-right: 15px; color: grey; font-size: 15px; line-height: 60px; }
+        .foot_link a {  margin-left: 15px; margin-right: 15px; color: grey; font-size: 15px; line-height: 60px; }
         .foot_friend_link { float: right; height: 100%;  width: 20%; }
         .friend_link_container { display: inline-block; width: 30px; height: 30px;  padding-top: 15px; margin-right: 10px; }
     </style>
@@ -203,8 +95,8 @@
         </ul>
     </div>
 
-    <div id="contact_block">
-        <div id="contact_buttons">
+    <div id="contact_block" class="common_backgroud_color">
+        <div id="contact_buttons" class="block_in_middle">
             <button class="contact_btn contact_btn_color">
                 Testimonials
             </button>
@@ -212,21 +104,23 @@
                 Recent Feedbacks 
             </button>
         </div>
-        <div class="block_in_middle" style="text-align: center; margin-top: 30px">
-            <span id="quote_span">"<span>
-        </div>
 
         <p id="contact_slogon" class="block_in_middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua</p>
-        <div class="decorate"></div>
-        <div id="ceo_name" class="block_in_middle">
-            <span class="firstname">John Meyer</span>
-            <span class="lastname">Halcyon, CEO</span>
+        <div id="ceo_name">
+            <span>John Meyer</span>
+            <span>Halcyon, CEO</span>
         </div>
-        <div id="manage_people" class="block_in_middle">
+        
+        <ul id="manage_people" class="block_in_middle">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- div id="manage_people" class="block_in_middle">
             <div class="people opacity_deal"></div>
             <div class="people"></div>
             <div class="people opacity_deal"></div>
-        </div>
+        </div -->
     </div>
     
     <div id="bottom_search">
@@ -237,7 +131,7 @@
         </form>
     </div>
 
-    <div id="footer">
+    <footer>
         <div class="foot_link">
             <a>Blog</a>
             <a>Contact Us</a>
@@ -255,6 +149,6 @@
                 <img src="assets/brooklyn-bridge-371216.jpg" style="width: 30px; height: 30px;"></img>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
