@@ -58,3 +58,12 @@ p { margin-top: 30; margin-bottom: 10px; font-size: 20px; font-weight: bold; tex
 .work_item { float: left; padding-top: 50px; width: 33%; height: 250px; }
 .work_pic { width: 80px; height: 80px; }
 .work_para_little { width: 220px; font-size: 15px; font-weight: normal; color: grey }
+
+#why_choose { height: 800px; padding-top: 30px; padding-left: 100px; padding-right: 100px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: grey; }
+#why_choose h2 { padding-top: 30px; font-size: 20px; font-weight: bold; text-align: center; }
+#why_choose h2::after { display: block; content:"";  width: 30px; height: 3px; background-color: black; opacity: 0.2;  margin-left: auto; margin-right: auto;  margin-top: 8px; margin-bottom: 40px; }
+#why_choose ul li { float: left;  width: 50%; height: 200px; }
+#why_choose ul li div { display: inline-block; width: 30%; height: 42px; }
+#why_choose ul li img { float: right; padding-right: 20px; }
+#why_choose ul li h3 { display:inline-block; vertical-align: top; padding-left: 10px; font-weight: bold; font-size: 30px; }
+#why_choose ul li p { margin-left: 30%; padding-left: 10px; width: 50%; text-align: left; font-weight: normal; font-size: 15px;  margin-top: 30px; margin-bottom: 10px; color: grey; } 
