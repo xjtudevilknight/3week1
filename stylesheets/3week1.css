@@ -82,12 +82,12 @@ p { margin-top: 30; margin-bottom: 10px; font-size: 20px; font-weight: bold; tex
 #why_choose h2 { padding-top: 30px; font-size: 20px; font-weight: bold; text-align: center; color: #606779; }
 #why_choose h2::after { display: block; content:"";  width: 30px; height: 3px; background-color: black; opacity: 0.2;  margin-left: auto; margin-right: auto;  margin-top: 8px; margin-bottom: 40px; }
 #why_choose ul li { float: left;  width: 50%; height: 200px; }
-#why_choose ul li:nth-child(2n-1) div { display: inline-block; width: 10%; height: 42px; }
+#why_choose ul li:nth-child(2n-1) div { display: inline-block; width: 42px; height: 42px; }
 #why_choose ul li:nth-child(2n) div { display: inline-block; width: 35%; height: 42px; }
-#why_choose ul li:nth-child(2n) img { float: right; padding-right: 10px; }
-#why_choose ul li h3 { display:inline-block; vertical-align: top; padding-left: 10px; font-weight: bold; font-size: 22px; color: #606779; }
+#why_choose ul li:nth-child(2n) img { float: right; padding-right: 20px; }
+#why_choose ul li h3 { display:inline-block; vertical-align: top; padding-left: 20px; font-weight: bold; font-size: 22px; color: #606779; }
 #why_choose ul li:nth-child(2n) h3 { padding-left: 0px; }
-#why_choose ul li p { margin-left: 10%; padding-left: 10px; width: 65%; text-align: left; font-weight: normal; font-size: 14px;  line-height: 25px; margin-top: 10px; margin-bottom: 10px; color: #9499A5; } 
+#why_choose ul li p { margin-left: 42px; padding-left: 20px; width: 65%; text-align: left; font-weight: normal; font-size: 14px;  line-height: 25px; margin-top: 10px; margin-bottom: 10px; color: #9499A5; } 
 #why_choose ul li:nth-child(2n) p { float: right; } 
 
 #contact_block { height: 650px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: grey;  border-top-width: 1px; border-top-style: solid; border-top-color: white; }
